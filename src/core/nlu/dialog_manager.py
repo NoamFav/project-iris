@@ -1,0 +1,1 @@
+# Manages conversation/dialog state

@@ -1,0 +1,1 @@
+-- Lua file for Neovim AI plugin

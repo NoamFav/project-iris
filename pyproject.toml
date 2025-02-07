@@ -1,0 +1,9 @@
+[tool.poetry]
+name = "ai-coding-assistant"
+version = "0.1.0"
+description = "Voice-driven AI coding assistant"
+authors = ["Your Name <your.email@example.com>"]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
