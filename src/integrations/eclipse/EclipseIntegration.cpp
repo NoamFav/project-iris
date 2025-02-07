@@ -1,1 +1,0 @@
-/* Additional Eclipse integration logic */
