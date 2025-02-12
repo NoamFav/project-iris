@@ -1,8 +1,4 @@
-# **Project Proposal: Voice-Driven AI Coding Assistant**
-
-# **Group 3**
-
-# **Umbrella Topic: NLP**
+# Voice-Driven AI Coding Assistant
 
 # **Table of Contents**
 
