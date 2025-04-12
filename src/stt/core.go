@@ -3,16 +3,19 @@ package stt
 import (
 	"bufio"
 	"fmt"
+	"github.com/NoamFav/Iris/src/config"
+	"log"
+	"os"
 	"os/exec"
-	"os/user"
-	"path/filepath"
 	"strings"
 )
 
 func Transcribe(filePath string) (string, error) {
 
-	usr, _ := user.Current()
-	modelPath := filepath.Join(usr.HomeDir, ".models/voice/ggml-large-v3-turbo.bin")
+	modelPath := config.DefaultWhisperModel.Path()
+	if _, err := os.Stat(modelPath); os.IsNotExist(err) {
+		log.Fatalf("Whisper model not found: %s", modelPath)
+	}
 
 	cmd := exec.Command("whisper-cli", "-m", modelPath, "-f", filePath)
 	out, err := cmd.CombinedOutput()
