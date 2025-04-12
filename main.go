@@ -11,7 +11,7 @@ func main() {
 
 	err := os.MkdirAll(config.AudioDir, os.ModePerm)
 	if err != nil {
-		log.Fatalf("Failed to create audio dirl: %v", err)
+		log.Fatalf("Failed to create audio dir: %v", err)
 	}
 	loop.StartLoop()
 }
