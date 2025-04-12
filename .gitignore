@@ -1,4 +1,4 @@
-# ================================
+#================================
 # OS-Specific Junk (macOS, Windows, Linux)
 # ================================
 .DS_Store
@@ -153,6 +153,7 @@ lerna-debug.log*
 coverage/
 *.lcov
 .nyc_output/
+audio/
 
 # ================================
 # Version Control and Build Artifacts
