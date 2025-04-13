@@ -114,7 +114,7 @@ func StartLoop() {
 						text,
 						path,
 						started.Format("2006-01-02 15:04:05"),
-						lastChunkTimelastChunkTime = time.Now().Format("2006-01-02 15:04:05"),
+						lastChunkTime.Format("2006-01-02 15:04:05"),
 					)
 				} else {
 					fmt.Println("  Transcription failed:", err)
