@@ -12,7 +12,9 @@ import (
 
 func StartLoop() {
 	// Clean up any old audio chunks from previous runs
-	_ = exec.Command("rm", "-f", "audio/*.wav").Run()
+	if err := exec.Command("sh", "-c", "rm -f audio/*.wav").Run(); err != nil {
+		fmt.Println("  Failed to clean audio dir:", err)
+	}
 	fmt.Println("  Cleaned up old chunks in audio/")
 
 	// Initialize PortAudio (required before any audio operations)
